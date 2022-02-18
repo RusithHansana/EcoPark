@@ -1,3 +1,6 @@
+body {
+  background-color: whitesmoke;
+}
 header {
   position: relative;
   background-color: rgb(255, 255, 255);
