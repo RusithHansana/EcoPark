@@ -29,3 +29,16 @@ body{
    height:auto;
    background-color: #f2f2f2;
 }
+
+.navelements{
+   font-size: 15px;
+}
+
+.navicon{
+   color: green;
+}
+
+.navicon:hover {
+   color:black;
+   font-weight: bold;
+ }
