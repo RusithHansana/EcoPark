@@ -1,13 +1,4 @@
 
-.titlebar{
-   float:left;
-   
-
-}
-
-body{
-   margin-top:15px; ;
-}
 
 .forumbackground{
    background-color: white;
@@ -17,9 +8,9 @@ body{
 
 .forumnav{
  
-   padding-top:5px;
-   padding-left:40px ;
-   padding-bottom: 5px;
+   padding-top:15px;
+   padding-left:20px ;
+   padding-bottom: 15px;
    padding-right: 20px;
    position: fixed;
    top:0;
@@ -28,6 +19,10 @@ body{
    width: 100%;
    height:auto;
    background-color: #f2f2f2;
+}
+
+.forumbody{
+   margin-top:5px; 
 }
 
 .navelements{
