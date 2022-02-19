@@ -23,6 +23,31 @@
 
 .forumbody{
    margin-top:5px; 
+   background-color: #f2f2f2;
+}
+
+.forumt{
+   width: 100%;
+   height: auto;
+   border: 2px solid black;
+}
+
+.forumt th,td{
+   padding: 5px;
+   border: 1px solid black;
+}
+
+h1{
+   font: size 1.7em;
+}
+
+.catbtn{
+   margin-top: 5px;
+   margin-bottom: 5px;
+   top:0;
+   float: right;
+   position: relative;
+   
 }
 
 .navelements{
