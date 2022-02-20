@@ -148,7 +148,29 @@
    
 }
 
+/*CSS for Comments*/
 
+.comments{
+   margin-top: 20px;
+  display: none;
+}
+
+.comments textarea{
+   width:100%;
+   min-height:100px;
+   padding: 10px;
+   margin-block: 10px;
+}
+
+.comments input{
+   float: right;
+   padding: 10px;
+   cursor: pointer;
+}
+
+.comments-container{
+   margin-top: 30px;
+}
 
 
 
