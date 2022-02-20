@@ -108,3 +108,48 @@
    margin-block: 5px;
 }
 
+
+
+/*Content Page Css*/
+
+.contenthead{
+   display: flex;
+   padding: 5px;
+   font-weight: bold;
+   font-size: 15px;
+   background-color: rgb(81, 134, 1);
+}
+
+.author{
+   flex:20%;
+}
+
+.topic{
+   flex:80%;
+}
+
+.discussioncontent{
+   display: flex;
+   padding: 10px;
+   background-color: rgb(111, 184, 3);
+   margin-top: 5px;
+}
+
+.discussioncontent .author .user{
+   font-size: 20px;
+}
+
+.cmntbtn{
+   border:none;
+   padding: 10px;
+   font-weight: bolder;
+   cursor: pointer;
+   float: right;
+   
+}
+
+
+
+
+
+
