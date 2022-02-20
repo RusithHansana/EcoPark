@@ -32,7 +32,7 @@
 .forumrow .status, .content, .discussion, .ld{
    padding: 5px;
    margin: 2px;
-   background-color: rgb(75, 122, 3);
+   background-color: rgb(81, 134, 1);
 }
 
 .forumrow .status{
@@ -57,4 +57,23 @@
    flex:15%;
    font-size: 20px;
    text-align: center;
+}
+
+/*Page Nav Styles */
+
+.pagenav{
+   padding:20px;
+   font-size: 15px;
+}
+
+.pagenav a{
+   color:green;
+   margin-inline: 5px;
+   padding: 5px 10px;
+   border: 1px solid green;
+  
+}
+
+.pagenav a:hover{
+   opacity: 0.5;
 }
