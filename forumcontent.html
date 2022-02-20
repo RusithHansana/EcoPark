@@ -23,12 +23,44 @@
                     <hr>
                     by EcoAuthor.
                     <div class="cmntbtn">
-                        <button>Comment</button>
+                        <button onclick="showComments()">Comment</button>
                     </div>
                 </div>
             </div>
         </div>
 
+        <!--Comments-->
+        <div class="comments" id="comments">
+            <textarea name="commentbox" placeholder="Add your thoughts ...."></textarea>
+            <input type="submit" name="Submit" value="Submit">
+        </div>
+
+        <!--Replies-->
+        <div class="comments-container">
+            <div class="contentbody">
+                <div class="contenthead">
+                    <div class="author">EcoUser</div>
+                        
+                    <div class="topic">Comments</div>
+                        
+                </div>
+                <div class="discussioncontent">
+                    <div class="user"><a href="#">EcoAuthor</a></div>
+                    <div class="topicdiscussion">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores inventore earum magnam amet temporibus,<br> accusamus iusto quas quos nam adipisci libero commodi qui. Nostrum <br>repellat ipsum illo debitis incidunt earum?
+                        <hr>
+                        by EcoAuthor.
+                        <div class="cmntbtn">
+                            <button onclick="showReplies()">Reply</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!--Inputting replies-->
+        <div class="comments" id="replies">
+            <textarea name="commentbox" placeholder="Add your replies ...."></textarea>
+            <input type="submit" name="Submit" value="Submit">
+        </div>
     </div>
     
 </body>
