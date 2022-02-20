@@ -77,3 +77,20 @@
 .pagenav a:hover{
    opacity: 0.5;
 }
+
+/*Path styles*/
+
+.path{
+   margin-block: 20px;
+   font-weight: lighter;
+   font-size: 24px;
+}
+
+.path a{
+   color: greenyellow;
+}
+
+.path a:hover{
+   color:green;
+   font-weight: bolder;
+}
