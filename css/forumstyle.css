@@ -94,3 +94,17 @@
    color:green;
    font-weight: bolder;
 }
+
+/*inote Styles*/
+
+.inote{
+   background-color: gray;
+   padding: 20px;
+   display: block;
+}
+
+.inote span{
+   font-size: 20px;
+   margin-block: 5px;
+}
+
