@@ -1,0 +1,10 @@
+.forumbody{
+   display: flex;
+}
+
+.forumbody div{
+   padding: 5px;
+   margin:2px;
+   background-color: greenyellow;
+   font-weight: bold;
+}
