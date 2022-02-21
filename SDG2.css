@@ -40,6 +40,7 @@ header{
     background: #fc036b;
     border-radius: 30px;
     color: whitesmoke;
+    margin: 10px;
 }
 
 /*focused  on zero hunger*/
@@ -78,3 +79,8 @@ h4{
     font-size: 3vmin;
     color: #484872;
     margin: 20px auto;
+}
+.target .indicators{
+    float: left;
+    
+}
