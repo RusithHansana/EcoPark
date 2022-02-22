@@ -112,3 +112,11 @@ h4{
     padding:5px; 
     margin: 5px;
 }
+.purpose{
+    font-size:20px; 
+    text-align: justify; 
+    padding:10px; 
+    margin: 10px;
+    background-color: rgba(172, 255, 47, 0.377);
+
+}
