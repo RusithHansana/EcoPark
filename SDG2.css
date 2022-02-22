@@ -1,8 +1,11 @@
 /*for the entire website*/
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Muli', Akaya Telivigala;
 }
 
 header{
@@ -91,6 +94,21 @@ h4{
     width: 100%;
     margin: 10px;
 }
-.about .row .title{
-    text-align: center;
+.aboutr{
+   text-align: center;
+
+}
+
+/*list css*/
+.infolist{
+    text-align: justify;
+    background-color: rgba(172, 255, 47, 0.377);
+    padding:20px;
+    display: block;
+    width: 100%;
+    margin: 10px;
+}
+.infolist li{
+    padding:5px; 
+    margin: 5px;
 }
