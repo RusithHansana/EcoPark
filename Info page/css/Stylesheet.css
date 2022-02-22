@@ -1,4 +1,8 @@
-.header{
-    height: -90vh;
-    width: -100vw;
+#header-background{
+    width: 100%;
+    height: 500px;
+    background: url(../Images/background.jpg) ;
+    background-repeat: no-repeat;
+    
+
 }
