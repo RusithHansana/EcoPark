@@ -20,8 +20,10 @@ header{
 }
 .header-content{
     margin-bottom: 150px;
-    color: whitesmoke;
+    color:whitesmoke;
     text-align: center;
+    text-shadow: 2px 2px greenyellow;
+
 }
 .header-content h2{
     font-size: 10vmin;
@@ -29,7 +31,7 @@ header{
 .line{
     width: 150px;
     height: 4px;
-    background: #fc036b;
+    background: greenyellow;
     margin: 10px auto;
     border-radius: 5px;
 }
@@ -40,9 +42,9 @@ header{
 }
 .ctn{
     padding: 8px 15px;
-    background: #fc036b;
+    background: greenyellow;
     border-radius: 30px;
-    color: whitesmoke;
+    color: black; 
     margin: 10px;
 }
 
@@ -54,7 +56,7 @@ section{
 .title{
     text-align:center;
     font-size: 4vmin;
-    color: blueviolet;
+    color: black;
 }
 .row{
     display: flex;
