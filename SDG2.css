@@ -9,8 +9,15 @@
 }
 
 header{
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+.htop{
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     background-image: url('./img/R.jpg');
     background-position: bottom;
     background-size: cover;
@@ -18,14 +25,15 @@ header{
     align-items: flex-end;
     justify-content: center;
 }
-.header-content{
+.content{
     margin-bottom: 150px;
     color:whitesmoke;
     text-align: center;
     text-shadow: 2px 2px greenyellow;
+    
 
 }
-.header-content h2{
+.content h2{
     font-size: 10vmin;
 }
 .line{
@@ -35,7 +43,7 @@ header{
     margin: 10px auto;
     border-radius: 5px;
 }
-.header-content h1{
+.content h1{
     font-size: 7vmin;
     margin-top: 50px;
     margin-bottom: 30px;
