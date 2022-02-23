@@ -17,60 +17,34 @@
         </h1>
     </div>
     <div class="forum-body">
-        <ol class="forum-content">
+        
+    </ol>
+    </div>
+    <script src="js/forum.js"></script>
+    <script>
+        console.log(threads);
+        var container=document.querySelector('ol');
+        for(let thread of threads){
+            var html=`
             <li class="list-row">
-                <a href="#">
-                    <h3 class="forum-title">
-                        Ecofarm
+                <a href="/thread.html?${thread.id}">
+                    <h3 class="title">
+                        ${thread.title}
                     </h3>
                     <div class="forum-body">
                         <p>
-                            23.02.2022
+                            ${new Date(thread.date).toLocaleString()}
                         </p>
                         <p>
-                            0 replies
+                            ${thread.comments.length}comments
                         </p>
                     </div>
                 </a>
             </li>
-            <hr>
-        <li class="list-row">
-            <a href="#">
-                <h3 class="forum-title">
-                    Ecofarm
-                </h3>
-                <div class="forum-body">
-                    <p>
-                        23.02.2022
-                    </p>
-                    <p>
-                        0 replies
-                    </p>
-                </div>
-            </a>
-            </li>
-        </ol>
-        <hr>
-        <li class="list-row">
-            <a href="#">
-                <h3 class="forum-title">
-                    Ecofarm
-                </h3>
-                <div class="forum-body">
-                    <p>
-                        23.02.2022
-                    </p>
-                    <p>
-                        0 replies
-                    </p>
-                </div>
-            </a>
-        </li>
-    </ol>
-    </div>
-    <script src="forum.js"></script>
-    <script>
+            `
+            container.insertAdjacentHTML('beforeend', html);
 
+        }
     </script>
 </body>
 </html>
