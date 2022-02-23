@@ -42,12 +42,12 @@
 <script src="js/forum.js"></script>
 <script>
     console.log(threads);
-    var conainer=document.querySele('section')
+    var conainer=document.querySelector('section')
     for(let thread of threads){
         var html=`<div class="forumrow">
              
              <div class="content">
-                 <a href="/item">
+                 <a href="/forumcontent.html?${thread.id}">
                     ${thread.title}
              </div>
              <div class="discussion">
@@ -57,14 +57,14 @@
              </div>
              <div class="ld">
                  ${new Date(thread.date).toLocalString()}
-                 <br>
-                 By <b><a href="#">EcoUser</a>.</b>
+                
              </div>
          </div>
      </div>
         
         
         `
+        conainer.insertAdjacentHTML('beforeend',html);
     }
 
 </script>

@@ -63,4 +63,34 @@
     
 </body>
 <script src="js/forum.js"></script>
+<script>
+   
+    var id=window.location.search.slice(1);
+    var thread=threads.find(t=> t.id ==id);
+    console.log(thread);
+    var comments=document.querySelector('.comments')
+    var headerHtml=`
+    
+                    <div class="topicdiscussion">
+                        ${comment.topicdiscussion}
+                        <hr>
+                        by ${comment.author}
+            
+                    </div>
+             
+
+    `
+    comments.insertAdjacentHTML('beforeend',commentHtml);
+    var btn=document.querySelector('button');
+    btn.addEventListener('click',function(){
+        var txt=document.querySelector('textarea');
+        var comment={
+            content:txt.value,
+            date:Date.now(),
+            author:'Aaron'
+        }
+        addComment(comment);
+        txt.value=''
+    })
+</script>
 </html>
