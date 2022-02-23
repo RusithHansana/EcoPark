@@ -11,23 +11,15 @@
 
 <body>
     <!--Forum Structure Layout-->
-    
-    <div class="container">
-        
-        <!--Show Path-->
-        
-        <div class="path">
-            <span><a href="#">EcoForum</a> >> <a href="#">Content</a></span>
-        </div>
+    <section>
         <div class="forum">
             <div class="forumbody">
-                <div class="status">Status</div>
                 <div class="content">Content</div>
                 <div class="discussion">Discussion</div>
                 <div class="ld">Latest Discussion</div>
             </div>
             <div class="forumrow">
-                <div class="status"><i class="fa fa-fire"></i></div>
+             
                 <div class="content">
                     <a href="#">Eco Park is website that encourages organic farming and to improve sustainable agriculture</a>
                     <br>
@@ -45,115 +37,35 @@
                 </div>
             </div>
         </div>
-
-    
-    
-    <div class="forumrow">
-        <div class="status"><i class="fa fa-fire"></i></div>
-        <div class="content">
-            <a href="#">Eco Park is website that encourages organic farming and to improve sustainable agriculture</a>
-            <br>
-            <span>Asked By <b><a href="#">EcoUser</a></b>.</span>
-        </div>
-        <div class="discussion">
-            no replies
-            <br>
-            0 views
-        </div>
-        <div class="ld">
-            20.02.2022
-            <br>
-            By <b><a href="#">EcoUser</a>.</b>
-        </div>
-    </div>
-
-
-
-
-<div class="forumrow">
-    <div class="status"><i class="fa fa-fire"></i></div>
-    <div class="content">
-        <a href="#">Eco Park is website that encourages organic farming and to improve sustainable agriculture</a>
-        <br>
-        <span>Asked By <b><a href="#">EcoUser</a></b>.</span>
-    </div>
-    <div class="discussion">
-        no replies
-        <br>
-        0 views
-    </div>
-    <div class="ld">
-        20.02.2022
-        <br>
-        By <b><a href="#">EcoUser</a>.</b>
-    </div>
-</div>
-
-
-<div class="forumrow">
-    <div class="status"><i class="fa fa-fire"></i></div>
-    <div class="content">
-        <a href="#">Eco Park is website that encourages organic farming and to improve sustainable agriculture</a>
-        <br>
-        <span>Asked By <b><a href="#">EcoUser</a></b>.</span>
-    </div>
-    <div class="discussion">
-        no replies
-        <br>
-        0 views
-    </div>
-    <div class="ld">
-        20.02.2022
-        <br>
-        By <b><a href="#">EcoUser</a>.</b>
-    </div>
-</div>
-
-<div class="forumrow">
-    <div class="status"><i class="fa fa-fire"></i></div>
-    <div class="content">
-        <a href="#">Eco Park is website that encourages organic farming and to improve sustainable agriculture</a>
-        <br>
-        <span>Asked By <b><a href="#">EcoUser</a></b>.</span>
-    </div>
-    <div class="discussion">
-        no replies
-        <br>
-        0 views
-    </div>
-    <div class="ld">
-        20.02.2022
-        <br>
-        By <b><a href="#">EcoUser</a>.</b>
-    </div>
-</div>
-
-
-<!--Page Navigation-->
-<div class="pagenav pagenava">
-    Page : <a href="#">1</a><a href="#">2</a><a href="#">3</a>
-</div>
-
-<!--Status Icons-->
-<div class="inote">
-    <span>
-        <i class="fa fa-frown-o"></i>&nbsp; 0 Activity
-    </span>
-    <br>
-    <span>
-        <i class="fa fa-book"></i>&nbsp; Low Activity
-    </span>
-    <br>
-    <span>
-        <i class="fa fa-fire"></i>&nbsp; Popular 
-    <span>
-    <br>
-        <i class="fa fa-rocket"></i>&nbsp; Trending
-    </span>
-</div>
-</div>
-    
-   
+    </section>
 </body>
 <script src="js/forum.js"></script>
+<script>
+    console.log(threads);
+    var conainer=document.querySele('section')
+    for(let thread of threads){
+        var html=`<div class="forumrow">
+             
+             <div class="content">
+                 <a href="/item">
+                    ${thread.title}
+             </div>
+             <div class="discussion">
+                    ${thread.disscusion}
+                 <br>
+                 ${thread.comments.length}replies
+             </div>
+             <div class="ld">
+                 ${new Date(thread.date).toLocalString()}
+                 <br>
+                 By <b><a href="#">EcoUser</a>.</b>
+             </div>
+         </div>
+     </div>
+        
+        
+        `
+    }
+
+</script>
 </html>

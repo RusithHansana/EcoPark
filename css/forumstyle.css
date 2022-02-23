@@ -5,7 +5,7 @@
 
 .container{
    margin:20px;
-   padding: 20px;
+   padding: 20px; 
 }
 
 
@@ -24,17 +24,15 @@
    font-weight: bold;
 }
 
-.forumbody .status{
-   flex: 5%;
-}
+
 .forumbody .content{
-   flex: 70%;
+   flex: 75%;
 }
 .forumbody .discussion{
    flex: 10%;
 }
 .forumbody .ld{
-   flex: 15%;
+   flex: 10%;
 }
 
 /*Content Styles*/
@@ -48,14 +46,9 @@
    background-color: rgb(81, 134, 1);
 }
 
-.forumrow .status{
-   flex:5%;
-   font-size: 30px;
-   text-align: center;
-}
 
 .forumrow .content{
-   flex:70%;
+   flex:75%;
    font-size: 20px;
    text-align: center;
 }
@@ -67,7 +60,7 @@
 }
 
 .forumrow .ld{
-   flex:15%;
+   flex:10%;
    font-size: 20px;
    text-align: center;
 }

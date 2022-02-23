@@ -17,3 +17,47 @@ function showReplies() {
         replyArea.style.display = "none";
     }
   }
+
+  var threads=[
+      {
+          title:"Thread 1",
+          author:"Aaron",
+          date:Date.now(),
+          content:"Thread Contend",
+          comments:
+          [
+              {
+                  author:"EcoUser",
+                  date:Date.now(),
+                  content:"Hey there"
+
+              },
+              {
+                  author:"EcoUser",
+                  date:Date.now(),
+                  content:"Hey There"
+              }
+          ]
+      },
+      {
+        title:"Thread 2",
+        author:"Aaron",
+        date:Date.now(),
+        content:"Thread Contend",
+        comments:
+        [
+            {
+                author:"EcoUser",
+                date:Date.now(),
+                content:"Hey there"
+
+            },
+            {
+                author:"EcoUser",
+                date:Date.now(),
+                content:"Hey There"
+            }
+        ]
+    }
+
+  ]
