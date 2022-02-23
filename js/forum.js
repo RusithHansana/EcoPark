@@ -1,5 +1,5 @@
 
-  var threads=[
+  var defaultThreads=[
       {
           id:1,
           title:"Thread 1",
@@ -45,7 +45,7 @@
 
   ]
 
-  var threads=defaultThreads
+  var threads;
   if (localStorage && localStorage.getItem('threads')){
       threads = JSON.parse(localStorage.getItem('threads'));
 

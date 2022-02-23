@@ -66,6 +66,11 @@
             comments.insertAdjacentHTML('beforeend', commentHtml);
         }
 
+        var comments =document.querySelector('.discussions');
+        for (let comment of thread.comments){
+            adddiscussion(comment);
+        }
+
         var btn=document.querySelector('button');
         btn.addEventListener('click',function(){
             var comment={
