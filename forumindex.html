@@ -11,61 +11,33 @@
 
 <body>
     <!--Forum Structure Layout-->
-    <section>
-        <div class="forum">
-            <div class="forumbody">
-                <div class="content">Content</div>
-                <div class="discussion">Discussion</div>
-                <div class="ld">Latest Discussion</div>
-            </div>
-            <div class="forumrow">
-             
-                <div class="content">
-                    <a href="#">Eco Park is website that encourages organic farming and to improve sustainable agriculture</a>
-                    <br>
-                    <span>Asked By <b><a href="#">EcoUser</a></b>.</span>
-                </div>
-                <div class="discussion">
-                    no replies
-                    <br>
-                    0 views
-                </div>
-                <div class="ld">
-                    20.02.2022
-                    <br>
-                    By <b><a href="#">EcoUser</a>.</b>
-                </div>
-            </div>
-        </div>
-    </section>
-</body>
-<script src="js/forum.js"></script>
-<script>
-    console.log(threads);
-    var conainer=document.querySelector('section')
-    for(let thread of threads){
-        var html=`<div class="forumrow">
-             
-             <div class="content">
-                 <a href="/forumcontent.html?${thread.id}">
-                    ${thread.title}
-             </div>
-             <div class="discussion">
-                    ${thread.disscusion}
-                 <br>
-                 ${thread.comments.length}replies
-             </div>
-             <div class="ld">
-                 ${new Date(thread.date).toLocalString()}
-                
-             </div>
-         </div>
-     </div>
-        
-        
-        `
-        conainer.insertAdjacentHTML('beforeend',html);
-    }
+    <div class="forum-top">
+        <h1>
+            EcoForum
+        </h1>
+    </div>
+    <div class="forum-body">
+        <ol>
+            <li class="list-row">
+                <a href="#">
+                    <h3 class="forum-title">
+                        Ecofarm
+                    </h3>
+                    <div class="forum-body">
+                        <p>
+                            23.02.2022
+                        </p>
+                        <p>
+                            0 replies
+                        </p>
+                    </div>
+                </a>
+            </li>
+        </ol>
+    </div>
+    <script src="forum.js"></script>
+    <script>
 
-</script>
+    </script>
+</body>
 </html>
