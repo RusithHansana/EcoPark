@@ -1,8 +1,7 @@
-
-  var defaultThreads=[
+var defaultThreads=[
       {
           id:1,
-          title:"Thread 1",
+          title:"EcoFarmThread 1",
           author:"EcoAuthor",
           date:Date.now(),
           content:"Thread Content 1",
@@ -23,7 +22,7 @@
       },
       {
         id:2,
-        title:"Thread 2",
+        title:"EcoFarmThread 2",
         author:"EcoAuthor",
         date:Date.now(),
         content:"Thread Content 2",
