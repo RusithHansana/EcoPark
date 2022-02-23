@@ -1,6 +1,24 @@
+/*Global Css*/
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Muli', Akaya Telivigala;
+    
+}
+
+
 /*forum-top styles*/
 .forum-top{
    background-color: yellowgreen;
    font-size: medium;
    padding: 10px;
 }
+
+/*Forum-content*/
+.list-row{
+   padding: 10px;
+}
+
