@@ -14,17 +14,56 @@
         </h1>
     </div>
     <div class="content-main">
-        <div class="content-body">
+        <div class="cbody">
             <!--Later added in js-->
         </div>
         <textarea>
             Add your thoughts.....
         </textarea>
         <button>Start Discussion</button>
-        <div  class="discussion">
+        <div  class="discussions">
             <!--Later added in js-->
         </div>
     </div>
 </body>
+<script src="/js/forum.js"></script>
+<script>
+    var id=window.location.search.slice(1);
+    var thread=threads.find(t=>t.id==id);
+    var header=document.querySelector('.cbody');
+    var headerHtml=`
+                    <h3 class="title">
+                        ${thread.title}
+                    </h3>
+                    <div class="forum-body">
+                        <p>
+                            ${new Date(thread.date).toLocaleString()}
+                        </p>
+                        <p>
+                            ${thread.comments.length}comments
+                        </p>
+                    </div>
+        `
+        header.insertAdjacentHTML('beforeend',headerHtml)
 
+        function adddiscussion(comment){
+            var commentHtml=`
+                <div class="discussion">
+                    <div class="dtop">
+                        <p>
+                            ${discussion.author}
+                        </p>
+                        <p>
+                            ${new Date(comment.date).toLocaleString()}
+                        </p>
+                        <p>
+                    </div>
+                    <div class="ccontent">
+                        ${comment.content}
+                    </div>
+                </div>
+            `
+            comments.insertAdjacentHTML('beforeend', commentHtml);
+        }
+</script>
 </html>
