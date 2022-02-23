@@ -6,6 +6,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Muli', Akaya Telivigala;
+    ;
+}
+body{
+    background-color: whitesmoke;
 }
 
 header{
@@ -16,7 +20,7 @@ header{
 
 
 .htop{
-    width: 100vw;
+    width: auto;
     height: 100vh;
     background-image: url('./img/R.jpg');
     background-position: bottom;
@@ -112,7 +116,7 @@ h4{
 /*list css*/
 .infolist{
     text-align: justify;
-    background-color: rgba(172, 255, 47, 0.377);
+    
     padding:20px;
     display: block;
     width: 100%;
@@ -126,12 +130,16 @@ h4{
     font-size:20px; 
     text-align: justify; 
     padding:10px; 
-    margin: 10px;
-    background-color: rgba(172, 255, 47, 0.377);
 
 }
 
 .orinfo{
     text-align: center;
     padding: 5px;
+}
+
+.aboutus{
+    background-color: rgba(172, 255, 47, 0.377) ;
+    text-align: justify; 
+    padding:10px; 
 }
