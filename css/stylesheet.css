@@ -11,8 +11,7 @@ body{
     left: 0%;
     min-height: 300px;
 }
-.coverart{
-    background-image: url(../img/coverart.png);
-    width: 100%;
-    height: 300px;
+.name h1{
+    
+    font-size: 100px;
 }
