@@ -65,5 +65,19 @@
             `
             comments.insertAdjacentHTML('beforeend', commentHtml);
         }
+
+        var btn=document.querySelector('button');
+        btn.addEventListener('click',function(){
+            var comment={
+                content: txt.value,
+                date: Date.now(),
+                author:'EcoAuthor'
+            }
+            addComment(comment);
+            txt.value='';
+            thread.comments.push(comment);
+            //Setting local storage
+            localStorage.setItem('threads',JSON.stringify(threads));
+        })
 </script>
 </html>
