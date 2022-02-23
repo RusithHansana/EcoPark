@@ -1,11 +1,8 @@
-#header-background{
-    width: 100%;
-    height: 500px;
-    background: url(../Images/background.jpg) ;
-    background-repeat: no-repeat;
-    
-
+.title h1 {
+    font-size: 100px;
 }
+
+
 .card{
     width: 100%;
     height: 100%;
