@@ -1,11 +1,8 @@
 /*Global Css*/
-@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Muli', Akaya Telivigala;
     
 }
 
@@ -25,6 +22,11 @@
 .forum-body{
    background-color: grey;
    padding: 20px;
+}
+
+textarea{
+   width: 80%;
+   height: 80px;
 }
 
 

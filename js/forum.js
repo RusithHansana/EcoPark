@@ -1,48 +1,48 @@
 var defaultThreads=[
-      {
-          id:1,
-          title:"EcoFarmThread 1",
-          author:"EcoAuthor",
-          date:Date.now(),
-          content:"Thread Content 1",
-          comments:
-          [
-              {
-                  author:"EcoUser",
-                  date:Date.now(),
-                  content:"Eco park...."
-
-              },
-              {
-                  author:"EcoUser",
-                  date:Date.now(),
-                  content:"Eco park....."
-              }
-          ]
-      },
-      {
-        id:2,
-        title:"EcoFarmThread 2",
-        author:"EcoAuthor",
-        date:Date.now(),
-        content:"Thread Content 2",
+    {
+        id:1,
+        title: "EcoThread 1",
+        author: "EcoAuthor",
+        date: Date.now(),
+        content:"Thread Content 1",
         comments:
         [
             {
-                author:"EcoUser",
-                date:Date.now(),
+                author: "EcoUser",
+                date: Date.now(),
                 content:"Eco park...."
 
             },
             {
-                author:"EcoUser",
-                date:Date.now(),
-                content:"Eco park....."
+                author: "EcoUser",
+                date: Date.now(),
+                content: "Eco park....."
             }
         ]
-    }
+    },
+    {
+      id:2,
+      title: "EcoThread 2",
+      author: "EcoAuthor",
+      date: Date.now(),
+      content: "Thread Content 2",
+      comments:
+      [
+          {
+              author: "EcoUser",
+              date: Date.now(),
+              content: "Eco park...."
 
-  ]
+          },
+          {
+              author: "EcoUser",
+              date: Date.now(),
+              content: "Eco park....."
+          }
+      ]
+  }
+
+]
 
   var threads;
   if (localStorage && localStorage.getItem('threads')){
@@ -53,3 +53,5 @@ var defaultThreads=[
       threads=defaultThreads;
       localStorage.setItem('threads', JSON.stringify(defaultThreads));
   }
+
+  

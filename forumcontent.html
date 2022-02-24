@@ -14,42 +14,38 @@
         </h1>
     </div>
     <div class="content-main">
-        <div class="cbody">
+        <div class="header">
             
         </div>
         <textarea>
             Add your thoughts.....
         </textarea>
         <button>Start Discussion</button>
-        <div  class="discussions">
+        <div  class="comments">
             
         </div>
     </div>
-</body>
-<script src="\js\forum.js"></script>
+    <script src="\js\forum.js"></script>
 
 <script>
     var id=window.location.search.slice(1);
     var thread=threads.find(t=>t.id==id);
-    var header=document.querySelector('.cbody');
-    var headerHtml=`
+    var header=document.querySelector('.header');
+    var headerhtml=`
                 <h3 class="title">
-                    ${thread.title}
+                    ${threads.title}
                 </h3>
                 <div class="cbody">
                     <p>
-                        ${new Date(thread.date).toLocaleString()}
-                    </p>
-                    <p>
-                        ${thread.comments.length} comments
+                        ${new Date(threads.date).toLocaleString()}
                     </p>
                 </div>
         `
-        header.insertAdjacentHTML('beforeend',headerHtml)
+        header.insertAdjacentHTML('beforeend',headerhtml)
 
         function adddiscussion(comment){
             var commentHtml=`
-                <div class="discussion">
+                <div class="comment">
                     <div class="dtop">
                         <p>
                             ${discussion.author}
@@ -57,7 +53,6 @@
                         <p>
                             ${new Date(comment.date).toLocaleString()}
                         </p>
-                        <p>
                     </div>
                     <div class="ccontent">
                         ${comment.content}
@@ -67,7 +62,7 @@
             comments.insertAdjacentHTML('beforeend', commentHtml);
         }
 
-        var comments =document.querySelector('.discussions');
+        var comments=document.querySelector('.comments');
         for (let comment of thread.comments){
             adddiscussion(comment);
         }
@@ -79,12 +74,14 @@
                 date: Date.now(),
                 author:'EcoAuthor'
             }
-            addComment(comment);
+            adddiscussion(comment);
             txt.value='';
             thread.comments.push(comment);
             //Setting local storage
             localStorage.setItem('threads',JSON.stringify(threads));
         })
 </script>
+</body>
+
 
 </html>
