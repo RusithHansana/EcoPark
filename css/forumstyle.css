@@ -1,3 +1,8 @@
 body{
     background-color: whitesmoke;
 }
+
+.btn-primary{
+    background-color: rgb(113, 182, 9);
+    color: white;
+}
