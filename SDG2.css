@@ -1,0 +1,145 @@
+/*for the entire website*/
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Muli', Akaya Telivigala;
+    ;
+}
+body{
+    background-color: whitesmoke;
+}
+
+header{
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+.htop{
+    width: auto;
+    height: 100vh;
+    background-image: url('./img/R.jpg');
+    background-position: bottom;
+    background-size: cover;
+    display:flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.content{
+    margin-bottom: 150px;
+    color:whitesmoke;
+    text-align: center;
+    text-shadow: 2px 2px greenyellow;
+    
+
+}
+.content h2{
+    font-size: 10vmin;
+}
+.line{
+    width: 150px;
+    height: 4px;
+    background: greenyellow;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.content h1{
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.ctn{
+    padding: 8px 15px;
+    background: greenyellow;
+    border-radius: 30px;
+    color: black; 
+    margin: 10px;
+}
+
+/*focused  on zero hunger*/
+section{
+    width: 80%;
+    margin: 80px auto; 
+}
+.title{
+    text-align:center;
+    font-size: 4vmin;
+    color: black;
+}
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+   
+}
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.row .col img{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.mission .row{
+    margin-top: 50px;
+}
+h4{
+    font-size: 3vmin;
+    color: #484872;
+    margin: 20px auto;
+}
+.target .indicators{
+    float: left;
+    
+}
+.howto{
+    background-color: rgba(172, 255, 47, 0.377);
+    padding:20px;
+    display: block;
+    width: 100%;
+    margin: 10px;
+}
+.aboutr{
+   text-align: center;
+
+}
+
+/*list css*/
+.infolist{
+    text-align: justify;
+    
+    padding:20px;
+    display: block;
+    width: 100%;
+    margin: 10px;
+}
+.infolist li{
+    padding:5px; 
+    margin: 5px;
+}
+.purpose{
+    font-size:20px; 
+    text-align: justify; 
+    padding:10px; 
+
+}
+
+.orinfo{
+    text-align: center;
+    padding: 5px;
+}
+
+.aboutus{
+    background-color: rgba(172, 255, 47, 0.377) ;
+    text-align: justify; 
+    padding:10px; 
+}
