@@ -1,0 +1,14 @@
+body{
+    background-color: whitesmoke;
+}
+
+.btn-primary{
+    background-color: rgb(113, 182, 9);
+    color: white;
+}
+
+header h1{
+    font-size: 100px;
+    text-align: center;
+    font-weight: bold;
+}
